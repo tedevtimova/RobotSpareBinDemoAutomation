@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="nameOne" value="Teddy" />
+    <parameter name="nameTwo" value="Evtimova" />
+    <parameter name="targetValue" value="100000" />
+    <test verbose="2" preserve-order="true" name="C:/Users/TeodoraEvtimova/IdeaProjects/RobotSpareBinDemoAutomation">
+        <classes>
+            <class name="Tests.LoginPageTests">
+                <methods>
+                    <include name="fillInLogin"/>
+                    <include name="login"/>
+                </methods>
+            </class>
+            <class name="Tests.HomePageTests">
+                <methods>
+                    <include name="verifyHomePage"/>
+                    <include name="fillInForm"/>
+                    <include name="sumbit"/>
+                    <include name="verifyFormResults"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
