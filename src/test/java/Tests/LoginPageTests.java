@@ -10,9 +10,9 @@ public class LoginPageTests extends TestNGHooks {
 
     @Test(priority = 0)
 
-    public void fillInLogin(){
+    public void fillInLogin() {
         loginPage = new LoginPage(driver);
-    loginPage.fillInLoginForm("maria", "thoushallnotpass");
+        loginPage.fillInLoginForm("maria", "thoushallnotpass");
 
     }
 

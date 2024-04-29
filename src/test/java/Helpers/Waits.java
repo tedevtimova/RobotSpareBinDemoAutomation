@@ -7,7 +7,7 @@ import java.time.Duration;
 
 public class Waits {
 
-    public static WebDriverWait getExplicitWait(WebDriver driver){
+    public static WebDriverWait getExplicitWait(WebDriver driver) {
         return new WebDriverWait(driver, Duration.ofSeconds(5));
     }
 

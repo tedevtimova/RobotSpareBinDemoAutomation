@@ -12,14 +12,14 @@ public class TestNGHooks {
 
     @BeforeSuite
 
-    public void openBrowser()  {
+    public void openBrowser() {
         driver = BrowserFactory.getDriver();
         driver.get("https://robotsparebinindustries.com/");
     }
 
     @AfterSuite
 
-    public void closeBrowser(){
+    public void closeBrowser() {
         BrowserFactory.tearDown();
     }
 }

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <parameter name="nameOne" value="Teddy" />
-    <parameter name="nameTwo" value="Evtimova" />
-    <parameter name="targetValue" value="100000" />
+    <parameter name="firstNameOne" value="Teddy" />
+    <parameter name="secondNameOne" value="Evtimova" />
+    <parameter name="resultValueOne" value="100000" />
+    <parameter name="firstNameTwo" value="Jenny" />
+    <parameter name="secondNameTwo" value="Hill" />
+    <parameter name="resultValueTwo" value="2000" />
     <test verbose="2" preserve-order="true" name="C:/Users/TeodoraEvtimova/IdeaProjects/RobotSpareBinDemoAutomation">
         <classes>
             <class name="Tests.LoginPageTests">
@@ -15,9 +18,15 @@
             <class name="Tests.HomePageTests">
                 <methods>
                     <include name="verifyHomePage"/>
-                    <include name="fillInForm"/>
-                    <include name="sumbit"/>
-                    <include name="verifyFormResults"/>
+                    <include name="fillInFormFirstUser"/>
+                    <include name="submitFirstUser"/>
+                    <include name="verifyFirstUserFormResults"/>
+                    <include name="verifyFirstUserResultMessage"/>
+                    <include name="fillInFormSecondUser"/>
+                    <include name="submitSecondUser"/>
+                    <include name="verifySecondUserFormResults"/>
+                    <include name="verifySecondUserResultMessage"/>
+                    <include name="verifyTotalUsersResults"/>
                 </methods>
             </class>
         </classes>
