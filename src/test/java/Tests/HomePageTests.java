@@ -95,3 +95,4 @@ public class HomePageTests extends TestNGHooks {
         Assert.assertEquals(homePage.verifyTotalDifference(), homePage.formatCurrency(difference), "Total Difference value does not match");
     }
 }
+

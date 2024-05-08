@@ -9,7 +9,7 @@ public class BrowserFactory {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            driver = createDriver("chrome");
+            driver = createDriver("mozila");
         }
         return driver;
     }

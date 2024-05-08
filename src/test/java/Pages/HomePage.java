@@ -200,7 +200,11 @@ public class HomePage {
 
     public String formatCurrency(int value) {
         DecimalFormat formatter = new DecimalFormat("$#,###");
-        return formatter.format(value);
+        if (value < 0) {
+            return "$-" + formatter.format(-value).substring(1);
+        } else {
+            return formatter.format(value);
+        }
     }
 
     public int getSelectedOptionOneValue() {

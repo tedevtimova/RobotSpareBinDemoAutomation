@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <parameter name="firstNameOne" value="Teddy" />
     <parameter name="secondNameOne" value="Evtimova" />
-    <parameter name="resultValueOne" value="100000" />
+    <parameter name="resultValueOne" value="100" />
     <parameter name="firstNameTwo" value="Jenny" />
     <parameter name="secondNameTwo" value="Hill" />
     <parameter name="resultValueTwo" value="2000" />
